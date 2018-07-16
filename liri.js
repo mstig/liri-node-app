@@ -7,6 +7,7 @@
 */
 
 require("dotenv").config();
+var fs = require("fs");
 var keys = require("./keys.js");
 var Spotify = require("node-spotify-api");
 var request = require("request");
@@ -35,12 +36,19 @@ if (spotifyCommand === "spotify-this-song") {  //only runs if spotify command is
             It was very tedious to have to go change what it logs every time to see it uncondensed and parse through each individually
             My first attempt was try to open the api url in a browser and parse through the objects in the console, but didn't work due to no verification token in browser...
             */
-            console.log(`Song name: ${data.tracks.items[0].name} \nBand name ${data.tracks.items[0].artists[0].name} \nAlbum name: ${data.tracks.items[0].album.name} \nSong preview: ${data.tracks.items[0].preview_url}`);
+
+            var songData = (`Song name: ${data.tracks.items[0].name} \nBand name ${data.tracks.items[0].artists[0].name} \nAlbum name: ${data.tracks.items[0].album.name} \nSong preview: ${data.tracks.items[0].preview_url}`);
             //I used the 30 second preview URL, there were also links to the song itself and the entire album
+            console.log(songData);
+            fs.appendFile("log.txt", ("\r\n" + songData), function (err) {
+                if (err) {
+                    console.log(err);
+                }
+            });
         }
     });
 }
 
-else{
+else {
     console.log("Invalid input, use 'spotify-this-song' to get song information!");
 }
