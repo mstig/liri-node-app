@@ -11,3 +11,19 @@ Song name: Purple Rain
 Band name Prince 
 Album name: Purple Rain 
 Song preview: https://p.scdn.co/mp3-preview/2fe008411edea4f21355301daa8993663eaf46f8?cid=4bd87a1d45df483cb48648ff09e5a4d9
+Song name: Stairway To Heaven 
+Band name Led Zeppelin 
+Album name: Led Zeppelin IV (Deluxe Edition) 
+Song preview: https://p.scdn.co/mp3-preview/8226164717312bc411f8635580562d67e191a754?cid=4bd87a1d45df483cb48648ff09e5a4d9
+Song name: Rime Of The Ancient Mariner - 1998 Remastered Version 
+Band name Iron Maiden 
+Album name: Powerslave (1998 Remastered Version) 
+Song preview: https://p.scdn.co/mp3-preview/1dbf6507d8ad4a621b802396340bb8f474872558?cid=4bd87a1d45df483cb48648ff09e5a4d9
+Song name: The Sign 
+Band name Ace of Base 
+Album name: The Sign (US Album) [Remastered] 
+Song preview: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=4bd87a1d45df483cb48648ff09e5a4d9
+Song name: Call Me Maybe 
+Band name Carly Rae Jepsen 
+Album name: Kiss (Deluxe) 
+Song preview: null
