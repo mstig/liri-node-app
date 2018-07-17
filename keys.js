@@ -14,5 +14,5 @@ exports.twitter = {
   
 
   exports.omdb = {
-      api: "f93627cf"
+      api: process.env.OMDB_API_KEY
   }
