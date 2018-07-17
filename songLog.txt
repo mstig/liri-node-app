@@ -1,0 +1,10 @@
+Spotify Song Log file for inquirerLiri, basic liri.js uses log.txt
+
+Song Information:Song name: Runnin on Empty 
+Band name 6s 
+Album name: Runnin on Empty 
+Song preview: https://p.scdn.co/mp3-preview/f3739b8b745cc5fb8420099c99aff44c468cf2db?cid=4bd87a1d45df483cb48648ff09e5a4d9
+Song Information:Song name: Running On Empty 
+Band name Jackson Browne 
+Album name: Running On Empty 
+Song preview: https://p.scdn.co/mp3-preview/2b79100d599323aa749201e1da80ae94a8b3c2e7?cid=4bd87a1d45df483cb48648ff09e5a4d9

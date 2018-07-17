@@ -75,7 +75,7 @@ function spotifyLogger(data) {
     var songData = (`Song name: ${data.tracks.items[0].name} \nBand name ${data.tracks.items[0].artists[0].name} \nAlbum name: ${data.tracks.items[0].album.name} \nSong preview: ${data.tracks.items[0].preview_url}`);
     //I used the 30 second preview URL, there were also links to the song itself and the entire album
     console.log(songData);
-    fs.appendFile("log.txt", ("\r\nSong Information:" + songData), function (err) {
+    fs.appendFile("songLog.txt", ("\r\nSong Information:" + songData), function (err) {
         if (err) {
             console.log(err);
         }
@@ -83,12 +83,16 @@ function spotifyLogger(data) {
 }
 
 //twitter request
+//next step is letting the user input which handle to search, but the error return is weird
 function twitterSearch() {
     var client = new Twitter(keys.twitter);
     var params = { screen_name: 'HwNode' };
     client.get('statuses/user_timeline', params, function (error, tweets, response) {
         if (!error) {
             tweetLogger(tweets)
+        }
+        else {
+            console.log(error);
         }
     });
 }
@@ -99,7 +103,7 @@ function tweetLogger(tweets) {
     for (i = 0; i < 5; i++) {
         var tweetInfo = `Tweet: ${tweets[i].text} \nTimestamp: ${tweets[i].created_at}\n`;
         console.log(tweetInfo);
-        fs.appendFile("long.txt", ("\r\n New Twitter Info:" + name + "\r\n" + tweetInfo), function (err) {
+        fs.appendFile("tweetLog.txt", ("\r\n New Twitter Info:" + name + "\r\n" + tweetInfo), function (err) {
             if (err) {
                 console.log(err);
             }

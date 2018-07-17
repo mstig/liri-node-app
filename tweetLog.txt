@@ -1,3 +1,4 @@
+Twitter Logger for inquirerLiri, liri.js uses log.txt
 
  New Twitter Info:NodeTweetHw
 Tweet: Fifth and Final Fanfare 
